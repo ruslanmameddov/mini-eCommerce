@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
+}
+.container .searchMain {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+  gap: 20px;
+}
+.container .searchMain .selecetContainer #selected {
+  width: 174px;
+  height: 34px;
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  border-bottom: 1px solid #000;
+  background: #FFF;
+}
+.container .searchMain .searchInp, .container .searchMain .searchInp #search_input {
+  display: flex;
+  padding: 0px 20px 0px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 2000px;
+  background: var(--carbon-50, #f7f7f7);
+}
+.container .searchMain .searchInp img, .container .searchMain .searchInp #search_input img {
+  cursor: pointer;
+}
+.container .searchMain .searchInp #search_input {
+  border: none;
+  outline: none;
+}
+.container #products_container .products {
+  display: flex;
+  margin-top: 42px;
+  margin-left: 278px;
+  width: 960px;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 200px;
+  border-radius: 24px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.container #products_container .products .listNumber {
+  align-self: flex-start;
+  margin-left: 24px;
+  display: flex;
+  height: 30px;
+  padding: 3px 8px 4px 4px;
+  align-items: center;
+  gap: 3px;
+  border-radius: 0px 0px 8px 8px;
+  background: var(--accent-yellow-400, #f4a403);
+  color: var(--white, #fff);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container #products_container .products #pr_image {
+  width: 176px;
+  height: 166px;
+  padding-right: 24px;
+}
+.container #products_container .products .productInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 28px;
+  border-right: 1px solid #e8e8e8;
+  padding-right: 14px;
+}
+.container #products_container .products .productInfo .product {
+  display: flex;
+  flex-direction: column;
+  width: 565px;
+}
+.container #products_container .products .productInfo .product .nameAndRate {
+  display: flex;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 12px;
+}
+.container #products_container .products .productInfo .product .nameAndRate #pr_name {
+  color: var(--carbon-800, #363636);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.container #products_container .products .productInfo .product .nameAndRate #pr_rate {
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 16px;
+  background: var(--accent-350, #f2f5ff);
+  color: var(--on-suface, #657dd0);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container #products_container .products .productInfo .product .productInfoTxt {
+  width: 547px;
+  height: 84px;
+  overflow: hidden;
+  color: var(--carbon-800, #363636);
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+.container #products_container .products .scoreBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.container #products_container .products .scoreBox .score {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.container #products_container .products .scoreBox .score #score_point {
+  color: var(--green-CTA, #1ab76c);
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px; /* 90.625% */
+}
+.container #products_container .products .scoreBox .score #score_txt {
+  color: var(--carbon-600, #696969);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.container #products_container .products .scoreBox .moreInfoBtn {
+  display: flex;
+  align-items: center;
+}
+.container #products_container .products .scoreBox .moreInfoBtn #more_info_btn {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  padding: 11px 10px 10px 10px;
+  align-items: flex-start;
+  border-radius: 38px;
+  background: var(--green-CTA, #1ab76c);
+  border: none;
+  cursor: pointer;
+}
+.container #products_container .products .scoreBox #comp_price {
+  color: var(--carbon-800, #363636);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}/*# sourceMappingURL=products.css.map */
